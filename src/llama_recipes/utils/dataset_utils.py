@@ -12,7 +12,7 @@ from llama_recipes.datasets import (
     get_alpaca_dataset,
     get_samsum_dataset,
     get_xsum_dataset,
-    get_dialogsum_dataset
+    get_dialogsum_dataset,
 )
 
 
@@ -57,7 +57,7 @@ DATASET_PREPROC = {
     "samsum_dataset": get_samsum_dataset,
     "custom_dataset": get_custom_dataset,
     "xsum_dataset": get_xsum_dataset,
-    "xsum_dataset": get_dialogsum_dataset,
+    "dialog_dataset": get_dialogsum_dataset,
 }
 
 

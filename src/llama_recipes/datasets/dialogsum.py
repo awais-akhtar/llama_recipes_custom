@@ -2,6 +2,8 @@ import datasets
 from tqdm import tqdm
 from itertools import chain
 
+import torch
+
 def dialogsum(tokenizer, dataset_config, split):
     chunk_size=2048
     class Concatenator(object):
