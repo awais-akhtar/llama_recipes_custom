@@ -10,7 +10,7 @@ def get_preprocessed_xsum(dataset_config, tokenizer, split):
     dataset = datasets.load_dataset("xsum", split=split)
 
     prompt = (
-        f"Summarize this dialog:\n{{document}}\n---\nSummary:\n{{summary}}{{eos_token}}"
+        f"Summarize this dialog:\n{{dialog}}\n---\nSummary:\n{{summary}}{{eos_token}}"
     )
 
     def apply_prompt_template(sample):

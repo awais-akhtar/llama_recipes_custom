@@ -3,7 +3,14 @@
 
 from dataclasses import dataclass
 
-    
+
+@dataclass
+class dialog_dataset:
+    dataset: str =  "dialog_dataset"
+    train_split: str = "train"
+    test_split: str = "validation"
+    input_length: int = 2048  
+
 @dataclass
 class samsum_dataset:
     dataset: str =  "samsum_dataset"
